@@ -26,44 +26,50 @@ header {
 
 .scores {
     background: var(--seondary);
-    /* padding: 30px 25px; */
-    /* border-bottom: 5px solid var(--primary); */
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 #currentScore {
-    padding: 0px 25px;
+    padding: 0px 5px;
 }
 #highscore{
-    padding: 0px 25px;
+    padding: 0px 5px;
 }
 
 .timer {
-    background: var(--tertiary);
-
-    /* padding: 30px 25px; */
-    /* border-bottom: 5px solid var(--primary); */
-    /* flex: 1; */
+    background: var(--seondary);
     display: flex;
-    padding: 0px 25px;
+    padding: 0px 5px;
     
+}
+#startquiz{
+    text-align: center;
+    font-size: 25px;
+    background: lightblue;
+    margin : 5px auto;
+    border: 3px solid blue;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+}
+#quizarea{
+    text-align: center;
+    margin: 10px auto;
 }
 
 
-.submitAnswerButton {
-    color: blue;
-    background: yellow;
-    padding: 10px 15px;
-    display: none;
+#questionArea{
+    background: beige;
+    font-style: strong;
 }
 
 .quizQuestion{
-    background: red;
+    font-size: 35px;   
 }
 .quizOptions{
-    background-color: grey;
+    font-size: 25px;
     margin: 0px 5px;
     list-style: none;
 }
@@ -72,17 +78,35 @@ header {
     border: 2px solid black;
     margin: 5px;
 }
-#startquiz{
+.submit{
     text-align: center;
+    margin: 5px auto;
+}
+.submitAnswerButtonHidden {
+    color: blue;
     background: lightblue;
-    border: 3px;
+    padding: 10px 15px;
+    display: none;
+    border : 3px solid lightblue;
     border-radius: 5px;
+    font-weight: bold;
 }
-#quizarea{
+.submitAnswerButtonVisible {
+    color: blue;
+    background: lightblue;
+    padding: 10px 15px;
+    border : 3px solid lightblue;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.resultArea{
     text-align: center;
-    
+    font-weight: bold;
 }
-#questionArea{
-    font-size: 35px;
-    font-style: strong;
+.CorrectResult{
+    color : green;
+}
+.WrongResult{
+    color : red;
 }

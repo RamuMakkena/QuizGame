@@ -23,7 +23,7 @@
             </div>
             <div class="timer">
                  <div id="timeHeader">
-                     <h4>Time Remaining</h4>
+                     <h4>Time Remaining : </h4>
                  </div>
                  <div class="timeCounter">
 
@@ -37,13 +37,40 @@
                     <div class="quizQuestion">
                         <ul class="quizOptions"></ul>
                     </div>
-
                 </div>
-                <button class="submitAnswerButton" onclick="checkAnswer()">Submit Answer</button>
+                <div class="submit">
+                    <button id="submitAnswerButton" class="submitAnswerButtonHidden" onclick="checkAnswer()">Submit Answer</button>
+                </div>
             </div>
+            <div class="resultArea">
+                <H4 id="result"></H4>
+            </div>
+
         </section>
 
     </section>
+
+    <dialog id="score-dialog">
+        <form method="dialog">
+            <div>
+          <label>Initials :</label>
+          <input type="text" id="initials" placeholder="initials"/>
+        </div>
+        <div>
+          <label> Current Score : </label>
+          <label id="currentGameScore"></label>
+        </div>
+          <menu>
+            <button id="confirmBtn" value="unknown">Confirm</button>
+          </menu>
+        </form>
+        <div id="prevHighScore">
+            
+        </div>
+    </dialog>
+
+
+
     <script src="./assets/questions/questions-bank.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
