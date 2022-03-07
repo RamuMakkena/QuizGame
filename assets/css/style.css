@@ -10,11 +10,17 @@
     /* font-size: 62.5%; */
 }
 
-header {
+header, footer{
     background: var(--secondary);
     padding: 30px 25px;
     border-bottom: 5px solid var(--primary);
     text-align: center;
+    
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width:100%;
 }
 
 .secondHeader {
