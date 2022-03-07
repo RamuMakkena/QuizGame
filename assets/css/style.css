@@ -78,6 +78,12 @@ header {
     border: 2px solid black;
     margin: 5px;
 }
+.answerOptionSelected{
+    background-color: blue;
+    border: 2px solid black;
+    margin: 5px;
+    color: white;
+}
 .submit{
     text-align: center;
     margin: 5px auto;

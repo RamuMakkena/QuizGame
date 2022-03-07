@@ -92,7 +92,8 @@ function getOptions(questionNumber) {
 function checkAnswer() {
     //if no option seelcted send it back
     if (optionSelected === 0) {
-        alert("Please selet answer");
+        resultArea.className = "WrongResult";
+        resultArea.textContent="Please sect an option to proceed";
         return;
     }
     var actualAnswer = questionBank[questionNumber].answer;
@@ -130,10 +131,10 @@ orderedOptionsList.addEventListener("click", function (event) {
             var childNode = orderedOptionsList.childNodes[i];
             var childNodeOption = childNode.getAttribute("data-option-id");
             if (childNodeOption == optionSelected) {
-                event.target.setAttribute("style", "background-color:blue;color:white");
+                childNode.className = "answerOptionSelected";
             }
             else {
-                childNode.removeAttribute("style");
+                childNode.className = "answerOption";
             }
         }
     }
